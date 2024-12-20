@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JafarTopUp - Top Up Game Store</title>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        .diamond-option {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .diamond-option.clicked {
+            background-color: #0035f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" width="80px" height="70px" alt="Jafar TopUp"></div>
+    </header>
+
+    <main class="topup-page">
+        <div class="container">
+            <!-- Bagian Kiri -->
+            <div class="left-section">
+              <img src="ml.png" alt="Banner" class="banner-image">
+              <div class="topup-info">
+                <h2 class="tengah">Top Up Mobile Legends</h2><br>
+                <p>Cara Top Up</p>
+                <ul>
+                  <li>1. Masukkan User ID dan Zone ID Anda</li>
+                  <li>2. Contoh: 1234567 (1234)</li>
+                  <li>3. Pilih Nominal Diamonds yang kamu inginkan</li>
+                  <li>4. Selesaikan pembayaran</li>
+                  <li>5. Diamonds akan ditambahkan ke akun Mobile Legends kamu</li>
+                </ul>
+              </div>
+            </div>
+          
+            <!-- Bagian Kanan -->
+            <div class="right-section">
+              <h3>Pilih nominal</h3>
+              <div class="stats">
+                <span>83.409 item dibeli hari ini!</span>
+              </div>
+              <div class="tab-menu">
+              </div>
+              <div class="card-container">
+                <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                  <div class="diamond-info">
+                    <h4>Weekly Diamond Pass</h4>
+                    <p>Event Top Up + 100</p>
+                  </div>
+                  <div class="price-info">
+                    <span>Harga <strong>Rp30.000</strong></span>
+                  </div>
+                </button>
+              
+                <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                  <div class="diamond-info">
+                    <h4>12 Diamonds</h4>
+                    <p>11 + 1 Bonus</p>
+                  </div>
+                  <div class="price-info">
+                    <span>Harga <strong>Rp3.700</strong></span>
+                  </div>
+                </button>
+
+                <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>19 Diamonds</h4>
+                      <p>17 + 2 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp5.800</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>28 Diamonds</h4>
+                      <p>25 + 3 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp8.300</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>59 Diamonds</h4>
+                      <p>53 + 6 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp16.600</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>85 Diamonds</h4>
+                      <p>77 + 8 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp23.800</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>170 Diamonds</h4>
+                      <p>154 + 16 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp47.500</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>374 Diamonds</h4>
+                      <p>326 + 48 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp104.200</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>408 Diamonds</h4>
+                      <p>367 + 41 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp113.400</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>425 Diamonds</h4>
+                      <p>373 + 52 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp118.000</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>568 Diamonds</h4>
+                      <p>503 + 65 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp154.700</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>522 Diamonds</h4>
+                      <p>471 + 51 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp145.200</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>712 Diamonds</h4>
+                      <p>633 + 79 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp194.000</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>875 Diamonds</h4>
+                      <p>774 + 101 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp237.100</strong></span>
+                    </div>
+                  </button>
+
+                  <button class="diamond-card" class="diamond-option" onclick="selectDiamond(this)">
+                    <div class="diamond-info">
+                      <h4>1136 Diamonds</h4>
+                      <p>1006 + 130 Bonus</p>
+                    </div>
+                    <div class="price-info">
+                      <span>Harga <strong>Rp306.800</strong></span>
+                    </div>
+                  </button>
+
+              </div>
+
+              <div class="products" class="topup-form" onsubmit="return showQRIS();">
+                <form class="topup-form" onsubmit="return showQRIS();">
+                    <div class="form-group">
+                        <label for="user-id" class="label-custom">User ID</label>
+                        <input type="text" id="user-id" name="user-id" class="input-custom" placeholder="Masukkan User ID">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="server-id" class="label-custom">Server ID</label>
+                        <input type="text" id="server-id" name="server-id" class="input-custom" placeholder="Server ID">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-method" class="label-custom">Metode Pembayaran:</label>
+                        <select id="payment-method" name="payment-method">
+                            <option value="credit-card">QRIS</option>
+                        </select>
+                    </div>
+                    <div class="wadah">
+                      <button type="submit" class="btn-primary">Beli Sekarang</button>
+                    </div>
+                </form>
+            </div>
+              </div>
+            </div>
+          </div> 
+          <div class="ngisor">
+          <input id="ok" type="checkbox">
+          <br>      
+          <h2>Top Up Game Online Murah Terbaru dan Murah di Jafar Top Up</h2><br>
+          <h4 class="kkkk">Top Up Game Online dan Beli Voucher Game Online Terbaru dan Murah di JafarTopUp</h4><br>
+          <p class="oi">Top Up game JafarTopUp. Metode pembayaran lengkap, dijamin aman, instant proses, terpercaya dan legal 100%. Buat para buyer, seller, dan sultan-sultan di luar sana pastikan belanja dan jualan top up game JafarTopUp Tersedia bermacam-macam jenis game populer seperti Mobile Legends, PUBG Mobile, Valorant, Free Fire, Ragnarok, Dragon Raja, Light Of Thel, Steam Wallet dan berbagai game lainnya yang tidak kalah seru untuk dimainkan.</p><br>
+          <h4 class="kkkk">Mengapa Top Up dan Beli Voucher di JafarTopUp?</h4><br>
+          <div class="selengkapnya">
+            <p class="oi">JafarTopUp menjadi destinasi toko top up game yang paling dipilih para gamers untuk melakukan top up dan pembelian voucher game karena berbagai alasan penting. Pertama, banyaknya kategori game yang tersedia di JafarTopUp memungkinkan gamer untuk menemukan dan melakukan top up pada berbagai jenis game. Anda bisa top up ML, top up FF, top up PUBG, top up Ragnarok Origin, top up Steam Wallet, dan masih banyak lagi.</p><br>
+            <p class="oi">Tak hanya itu, JafarTopUp menawarkan kemudahan dan kenyamanan dalam melakukan transaksi, berkat sistem pembayaran yang aman dan beragam metode pembayaran yang ditawarkan. Kecepatan transaksi juga menjadi nilai plus dari JafarTopUp, di mana setelah pembayaran berhasil, saldo atau voucher game akan langsung masuk ke akun game, memungkinkan gamer untuk segera menikmati fitur atau item baru di game mereka.</p><br>
+            <p class="oi">Selain itu, JafarTopUp juga menawarkan harga yang sangat kompetitif. Dengan adanya berbagai penawaran dan promosi jaminan garansi 10x lipat uang kembali, gamer dapat melakukan top up dengan aman, nyaman dan termurah. Ini tentu saja sangat menguntungkan, terutama bagi gamer yang rutin melakukan top up atau membeli voucher. Dengan berbagai kemudahan dan keuntungan yang ditawarkan oleh JafarTopUp, tidak heran jika platform ini menjadi tempat top up game pilihan utama para gamers.</p><br>
+            <h4 class="kkkk">Apa itu Top Up Game?</h4><br>
+            <p class="oi">Top up game adalah istilah yang biasa digunakan dalam dunia gaming untuk merujuk pada proses pengisian ulang atau pembelian kredit virtual dalam sebuah game. Kredit ini biasa digunakan untuk membeli berbagai item virtual di dalam game, seperti karakter, kostum, senjata, power-ups, dan lainnya. Dengan melakukan top up, pemain bisa mendapatkan akses ke berbagai fitur atau item premium yang tidak bisa diperoleh hanya dengan bermain game secara normal.</p><br>
+            <p class="oi">Proses top up game biasanya melibatkan penggunaan mata uang asli. Pemain akan membayar sejumlah uang asli untuk membeli kredit atau mata uang virtual dalam game, yang nantinya bisa digunakan dalam game. Top up bisa dilakukan melalui berbagai metode, seperti pembayaran langsung melalui game, melalui website atau aplikasi penyedia layanan top up, atau melalui pembelian voucher fisik. Berbagai game memiliki sistem top up yang berbeda-beda, tetapi pada dasarnya, semua proses top up bertujuan untuk memperkaya pengalaman bermain game dan memungkinkan pemain untuk memaksimalkan kegiatan mereka di dalam game.</p><br>
+            <label for="ok" class="baca"><strong>Sembunyikan</strong></label>
+          </div><br>
+          <label for="ok" class="baca"><strong>Selengkapnya</strong></label>
+        </div>
+    </main>
+
+    <p class="akhir">________________________________________________________________________________________________________________________________</p>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="logo.png" alt="Logo" class="footer-logo">
+                <div class="kj">
+                  <p><strong>Jafar TopUp</strong></p>
+                  <p><strong>Top Up Game Termurah dan Terpercaya</strong></p>
+                </div>
+            </div>
+            <div class="region">
+                <h4>Wilayah & Bahasa</h4><br>
+                <button class="country-button">
+                    <img src="indo.png" alt="Indonesia Flag" class="flag-icon">
+                    Indonesia
+                </button>
+            </div>
+            <div class="payment">
+                <h4>Pembayaran Aman</h4>
+                <img src="gopay.png" alt="Gopay">
+                <img src="dana.png" alt="Dana">
+                <img src="shopeepay.png" alt="ShopeePay">
+                <img src="qriskecil.png" alt="QRIS">
+            </div>
+            <div class="contact">
+                <h4>Hubungi Kami</h4><br>
+                <p>Email: <a href="mailto:fajarkrisdianto422@gmail.com">fajarkrisdianto940@gmail.com</a></p><br>
+                <p>WhatsApp: <a href="https://wa.me/62831296016443">+6283129601644</a></p><br>
+                <p>Layanan Pengaduan Konsumen: +6283129601644</p><br>
+                <p>Kementerian Perdagangan RI: +62-021-3858171</p>
+            </div>
+            <div class="info">
+                <h4>Informasi</h4><br>
+                <a href="#">Syarat & Ketentuan</a><br>
+                <a href="#">Kebijakan Privasi</a><br>
+            </div>
+            <div class="social">
+                <h4>Ikuti Kami</h4>
+                <a><img src="fb.png" alt="Facebook"></a>
+                <a><img src="ig.png" alt="Instagram"></a>
+                <a><img src="x.png" alt="Twitter"></a>
+                <a><img src="tt.png" alt="TikTok"></a>
+            </div>
+        </div>
+        <p class="po">&copy; 2024 JafarTopUp. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        let selectedDiamonds = '';
+
+        function selectDiamond(button) {
+            var buttons = document.querySelectorAll('.diamond-card');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('clicked');
+            });
+
+            button.classList.add('clicked');
+            selectedDiamonds = button.innerText;
+        }
+
+        function showQRIS() {
+            const userId = document.getElementById('user-id').value;
+            const serverId = document.getElementById('server-id').value;
+
+            localStorage.setItem('userId', userId);
+            localStorage.setItem('serverId', serverId);
+            localStorage.setItem('selectedDiamonds', selectedDiamonds);
+
+            window.location.href = 'qris.html';
+            return false;
+        }
+
+        const cards = document.querySelectorAll('.diamond-card');
+
+        cards.forEach(card => {
+        card.addEventListener('click', () => {
+        
+        cards.forEach(c => c.classList.remove('selected'));
+
+        card.classList.add('selected');
+
+        console.log(card.querySelector('.diamond-info h4').textContent);
+        });
+    });
+
+    </script>
+</body>
+</html>
