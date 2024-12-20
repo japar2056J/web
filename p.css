@@ -1,0 +1,743 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section, .right-section {
+  padding: 30px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-image {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.topup-info {
+  margin-top: 20px;
+}
+
+.topup-info h2 {
+  color: green;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.topup-info p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.topup-info ul {
+  list-style: none;
+}
+
+.topup-info ul li {
+  margin-bottom: 5px;
+}
+
+.right-section {
+  flex: 2;
+  flex: 2;
+  max-height: 560px;
+  overflow-y: auto;
+}
+
+.right-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.right-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-section::-webkit-scrollbar-thumb {
+  background-color: #6200ea;
+  border-radius: 10px;
+}
+
+.right-section::-webkit-scrollbar-track {
+  background-color: #f4f4f9;
+}
+
+
+.stats {
+  background: rgb(240,178,247);
+  background: linear-gradient(90deg, rgba(240,178,247,1) 0%, rgba(212,162,221,1) 20%, rgba(172,234,245,1) 100%);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.yoyo {
+  width: 20px;
+  padding-top: 2px;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-menu button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f4f4f9;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-menu button:hover {
+  background-color: #6200ea;
+  color: white;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h4 {
+  margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lilita+One&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #dce3fa;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #b7ff00;
+    text-shadow: 2px 2px 5px rgba(190, 187, 187, 0.6);
+}
+
+header {
+  background: rgb(172,234,245);
+  background: linear-gradient(90deg, rgba(172,234,245,1) 0%, rgba(241,166,255,1) 56%, rgba(182,140,253,1) 100%);
+    color: #fff;
+    padding: 0.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 45%;
+}
+
+.logo img {
+  display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 5%;
+}
+
+#hero {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #0f3460;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#hero h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+/* Grid layouts */
+.game-grid, .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.game-item, .feature-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover, .feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.game-item img, .feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #e94560;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d13652;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a2e;
+    color: #dce3fa;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Top-up page styles */
+.topup-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.topup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.game-info, .topup-form {
+    flex: 1;
+}
+
+.game-info img {
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    padding: 1%;
+}
+
+.label-custom {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-custom {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid grey; 
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-custom:focus {
+  border-color: #6818bf;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.diamond-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+}
+
+.diamond-option {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.diamond-option:hover, .diamond-option.selected {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero h1, #hero p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 90%;
+}
+
+#hero h1 {
+    top: 30%;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+#hero p {
+    top: 45%;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slider styles */
+.slider-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Kembali ke ukuran tetap seperti sebelumnya */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+/* Tanda panah slider */
+.btn-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.btn-banner:hover {
+    background-color: #2f3768;
+}
+
+.btn-prev { left: 10px; }
+.btn-next { right: 10px; }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .slide {
+        height: 200px; /* Ukuran lebih kecil untuk layar mobile */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .slide {
+        height: 270px; /* Ukuran menengah untuk tablet */
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .slide {
+        height: 340px; /* Ukuran asli untuk desktop */
+    }
+}
+
+.cara {
+    line-height: 10px;
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.bambang {
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dce3fa;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.diamond-card {
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none; /* Hilangkan border default tombol */
+}
+
+.diamond-card:hover {
+  border-color: #6200ea; /* Warna border saat di-hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan saat hover */
+}
+
+.diamond-card:active {
+  transform: scale(0.98); /* Efek saat ditekan (klik) */
+}
+
+.diamond-card.selected {
+  border-color: #6200ea; /* Warna border untuk item yang dipilih */
+}
+
+.diamond-info h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.diamond-info p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.price-info {
+  background-color: #f0e6ff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.price-info strong {
+  color: red;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: transparent;
+  padding: 40px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container div {
+  margin: 10px;
+}
+
+.logo-section {
+  max-width: 200px;
+  color: #070303;
+  text-align: center;
+}
+
+.logo-section img {
+ width: 120px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.region,
+.payment,
+.contact,
+.reseller,
+.info,
+.social {
+  max-width: 200px;
+}
+
+.region button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.flag-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.payment img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.contact a, 
+.reseller a, 
+.info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact a:hover, 
+.reseller a:hover, 
+.info a:hover {
+  text-decoration: underline;
+  color: #353545;
+}
+
+.social a {
+  margin-right: 10px;
+}
+
+.social img {
+  width: 25px;
+  border-radius: 10px;
+}
+
+.contact p {
+  color: #343443;
+}
+
+.payment h4 {
+  color: #343443;
+}
+
+.region h4 {
+  color: #343443;
+}
+
+.info h4 {
+  color: #343443; 
+}
+
+.contact h4 {
+  color: #343443;
+}
+
+.social h4 {
+  color: #343443;
+}
+
+.tengah {
+text-align: center;
+}
+
+.ngisor {
+text-align: justify;
+font-family: "Ubuntu", sans-serif;
+}
+
+.ngisor p {
+font-size: small
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#ok {
+display: none;
+}
+
+#ok:checked ~ .selengkapnya {
+display: block;
+}
+
+#ok:checked ~ label {
+display: none;
+}
+
+.baca {
+text-align: center;
+cursor: pointer;
+color: #4d04a1;
+}
+
+.selengkapnya {
+display: none;
+}
+
+.oi {
+line-height: 2.5;
+}
+
+.po {
+color: #000;
+}
+
+.akhir {
+text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #9745e9;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: rgb(172,234,245);
+  background: linear-gradient(90deg, rgba(172,234,245,1) 0%, rgba(241,166,255,1) 56%, rgba(182,140,253,1) 100%);
+}
+
+.wadah {
+  display: flex;
+  justify-content: center;
+}
